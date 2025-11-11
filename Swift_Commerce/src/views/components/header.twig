@@ -1,0 +1,18 @@
+<header class="main-header">
+    <div class="container">
+        <a href="{{ url('/') }}" class="logo">
+            <h1 class="text-center">{{ app.title }}</h1>
+        </a>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="{{ url('/') }}">{{ lang('home') }}</a></li>
+                <li><a href="{{ url('/collections') }}">{{ lang('shop_now') }}</a></li>
+                <li><a href="{{ url('/deals') }}">{{ lang('daily_deals') }}</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <a href="{{ url('/search') }}" class="search-icon">{{ lang('search') }}</a>
+            <a href="{{ url('/cart') }}" class="cart-icon">{{ lang('cart') }} ({{ cart.count }})</a>
+        </div>
+    </div>
+</header>

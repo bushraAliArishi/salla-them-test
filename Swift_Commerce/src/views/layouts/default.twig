@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ app.language }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{{ app.title }}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
+    {% block head_extra %}{% endblock %}
+</head>
+<body class="theme-swift-commerce">
+    {% include 'components/header.twig' %}
+
+    <main id="main-content">
+        {% block content %}{% endblock %}
+    </main>
+
+    {% include 'components/footer.twig' %}
+
+    <script src="{{ asset('assets/js/app.js') }}"></script>
+    {% block body_extra %}{% endblock %}
+</body>
+</html>
