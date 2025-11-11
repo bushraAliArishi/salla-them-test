@@ -1,4 +1,4 @@
-﻿// Swift Commerce Theme JavaScript
+// Swift Commerce Theme JavaScript
 document.addEventListener('DOMContentLoaded', function() {
     console.log('Swift Commerce Theme is running!');
 
